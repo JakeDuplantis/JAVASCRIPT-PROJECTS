@@ -18,6 +18,11 @@ function division() {                       //Defining a function and naming it
 	document.getElementById("Math").innerHTML = "72 / 9 = " + simple_Math;      //using document.getElementById method to assign element an id
 }
 
+function modulus_operator() {               //Defining a function and naming it
+	var simple_Math = 32 % 6;               //Defining a variable and using modulus 
+	document.getElementById("Math").innerHTML = "When you divide 32 by 6 you have a remainder of: " + simple_Math;   //using document.getElementById method to assign element an id
+}
+
 function increment() {                      //Defining a function and naming it
     var X = 10;                             //Defining a variable and assigning a value
     X++;                                    //increment operator
