@@ -8,8 +8,8 @@ function changeColor(){                                        //Defining a func
 }
 
 
-
-	
-
-																	
-	
+function weather(){                              //Defined a function and named it
+    var text1 = "What a very ";                  //Defined a variable and gave it a string value
+    text1 += "nice day";                         //used += operator to concatenate strings
+    document.write(text1);                       //print string text1
+}
