@@ -38,10 +38,10 @@ function Age_Function() {							//Defining a function and naming it
 function Time_function() {					//Defining a function and naming it
 	var Time = new Date().getHours();		//Declaring variable, new keyword to creat Date object for .getHours method
 	var Reply;
-	if (Time < 12 == Time > 0) {			//if statement
+	if (Time < 12 && Time > 0) {			//if statement
 		Reply = "It is morning time!";		//if branch
 	}
-	else if (Time >= 12 == Time < 18) {		//else if statement
+	else if (Time >= 12 && Time < 18) {		//else if statement
 		Reply = "It is afternoon.";			//else if branch
 	}
 	else {									//else statement
