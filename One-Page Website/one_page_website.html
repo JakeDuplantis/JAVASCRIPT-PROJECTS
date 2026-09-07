@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>RV Rentals</title>
+        <meta charset="UTF-8">
+        <meta name="description" content="Refurbished RV Rentals">
+        <link rel="stylesheet" href="CSS/One-Page Website.css">
+        <link rel="stylesheet" href="CSS/lightbox.css">
+        <script src="JS/one_page_website.js"></script>
+    </head>
+    <body>
+       
+        <header>
+            <div>
+                <h1>RV Rental Center</h1>
+                <h2>We have the right RV for your needs!</h2>
+            </div>
+        </header>
+         <!--Navbar-->
+        <nav class="nav-bar">
+            <ul> 
+                <a href="#"><li>Home</a></li>
+                <a href="#Video"><li>RV Video</li></a>
+                <a href="#Class A"><li>Class A</li></a>
+                <a href="#Class B"><li>Class B</li></a>
+                <a href="#Class C"><li>Class C</li></a>
+                <a href="#Fifth-Wheele"><li>Fifth-Wheele</li></a>
+                <a href="#Travel Trailer"><li>Travel Trailer</li></a>
+            </ul>
+        </nav>
+
+        <!--Lightbox-->
+        <section>
+    
+           <div class="row">
+                <div class="column">
+                    <img src="Images/RV Class A_small.jpg" style="width:100%" onclick="openModal();currentSlide(1)" class="hover-shadow cursor">
+                </div>
+                <div class="column">
+                    <img src="Images/RV Class B_small.jpg" style="width:100%" onclick="openModal();currentSlide(2)" class="hover-shadow cursor">
+                </div>
+                <div class="column">
+                    <img src="Images/RV Class C_small.jpg" style="width:100%" onclick="openModal();currentSlide(3)" class="hover-shadow cursor">
+                </div>
+                <div class="column">
+                    <img src="Images/Fifth-Wheel Trailer.jpg" style="width:100%" onclick="openModal();currentSlide(4)" class="hover-shadow cursor">
+                </div>
+                 <div class="column">
+                    <img src="Images/Travel Trailer_small.jpg" style="width:100%" onclick="openModal();currentSlide(5)" class="hover-shadow cursor">
+                </div>
+            </div>
+
+        <div id="myModal" class="modal">
+            <span class="close cursor" onclick="closeModal()">&times;</span>
+            <div class="modal-content">
+
+                <div class="mySlides">
+                    <div class="numbertext">1 / 5</div>
+                    <img src="Images/RV Class A_big.jpg" style="width:100%">
+                </div>
+
+                <div class="mySlides">
+                    <div class="numbertext">2 / 5</div>
+                    <img src="Images/RV Class B_big.jpg" style="width:100%">
+                </div>
+
+                <div class="mySlides">
+                    <div class="numbertext">3 / 5</div>
+                    <img src="Images/RV Class C_big.jpg" style="width:100%">
+                </div>
+                
+                <div class="mySlides">
+                    <div class="numbertext">4 / 5</div>
+                    <img src="Images/Fifth-Wheel Trailer_big.jpg" style="width:100%">
+                </div>
+
+                <div class="mySlides">
+                    <div class="numbertext">5 / 5</div>
+                    <img src="Images/Travel Trailer_big.jpg" style="width:100%">
+                </div>
+            
+                <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                <a class="next" onclick="plusSlides(1)">&#10095;</a>
+        
+                <div class="caption-container">
+                    <p id="caption"></p>
+                </div>
+
+                <div class="column">
+                    <img class="demo cursor" src="Images/RV Class A_big.jpg" style="width:100%" onclick="currentSlide(1)" alt="RV Class A">
+                </div>
+                <div class="column">
+                    <img class="demo cursor" src="Images/RV Class B_big.jpg" style="width:100%" onclick="currentSlide(2)" alt="RV Class B">
+                </div>
+                <div class="column">
+                    <img class="demo cursor" src="Images/RV Class C_big.jpg" style="width:100%" onclick="currentSlide(3)" alt="RV Class C">
+                </div>
+                <div class="column">
+                    <img class="demo cursor" src="Images/Fifth-Wheel Trailer_big.jpg" style="width:100%" onclick="currentSlide(4)" alt="Fifth-Wheel Trailer">
+                </div>
+                 <div class="column">
+                    <img class="demo cursor" src="Images/Travel Trailer_big.jpg" style="width:100%" onclick="currentSlide(5)" alt="Travel Trailer">
+                </div>
+            </div>
+        </div>
+
+        </section>
+        <!--FORM-->
+        <section>
+            <div>
+                <h3>Please provide your contact information and a brief message of your inquiry.</h3>
+                <div>
+                    <form>
+                        <input type="text" placeholder="First Name">
+                        <input type="text" placeholder="Last Name"><br>
+                        <input type="email" placeholder="Email">
+                        <input type="tel" placeholder="Phone Number"><br>
+                        <input type="checkbox" id="Deal notification">
+                        <label for="Deal notification">Would you like to receive emails on limited time discounts and deals?</label><br>
+                        <textarea placeholder="Type message here..."></textarea><br>
+                        <input type="submit" value="Submit">
+                    </form>
+                </div>
+            </div>
+        </section>
+        <!--RV Images-->
+         <section>
+            <div>
+                <h2>The right RV for your adventures</h2>
+                <p>We offer various models of RVs from large to small, whatever your need.</p>
+                <div>
+                    <!--Class A RV-->
+                    <div id="Class A">
+                        <h3>Class A</h3>
+                        <img src="Images/RV Class A.jpg" alt="Picture of RV class A variant">
+                    </div> 
+                    <!--Class B RV-->
+                    <div id="Class B">
+                        <h3>Class B</h3>
+                        <img src="Images/RV Class B.jpg" alt="Picture of RV class B variant">
+                    </div> 
+                     <!--Class C RV-->
+                    <div id="Class C">
+                        <h3>Class C</h3>
+                        <img src="Images/RV Class C.jpg" alt="Picture of RV class C varaiant">
+                    </div>
+                     <!--5th Wheel RV-->
+                    <div id="Fifth-Wheele">
+                        <h3>Fifth-Wheele</h3>
+                        <img src="Images/Fifth-Wheel Trailer.jpg" alt="Picture of 5th wheel RV variant">
+                    </div>
+                     <!--Travel Trailer RV-->
+                    <div id="Travel Trailer">
+                        <h3>Travel Trailer</h3>
+                        <img src="Images/Travel Trailer.jpg" alt="Picture of Travel Trailer RV variant">
+                    </div>   
+                </div>
+            </div>
+        <!--RV Video--> 
+        <section>
+            <div id="Video">
+                <h3>RV Types Video</h3>
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/E4hQSHi2sr4?si=6lzeNRwFguT_ztU9"></iframe>
+            </div>
+        </section>
+              
+    </body>
+    <!--Footer-->
+    <footer>
+         <table>
+                <tr>
+                    <td>
+                        <p>RV Rental Center &copy;</p>
+                        <p>123 Square Blvd</p>
+                    </td>
+                    <td>
+                        <p>225-123-4567</p>
+                        <p>Baton Rouge, LA</p>
+                    </td>
+                </tr>
+            </table>
+    </footer>
+</html>
