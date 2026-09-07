@@ -18,7 +18,7 @@ function getMsg() {
     //request from the server
     ajaxRequest.open('GET', 'response.html', true);
 
-    //step 3: Defines the AJAX rresponse callback method that
+    //step 3: Defines the AJAX response callback method that
     //establishes whether the response was successful and where
     //the data should be displayed
     ajaxRequest.onreadystatechange = function(){
